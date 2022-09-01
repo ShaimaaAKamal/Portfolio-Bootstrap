@@ -1,0 +1,465 @@
+ :root{
+    --siteColor:#0078FF;
+ }
+ 
+.lh-xl{
+    line-height: 2.3rem;
+}
+
+.px-lg-7{
+    padding-right: 0.625rem;
+}
+
+.h7{
+    font-size: 3rem;
+}
+
+.py-6{
+    padding:5rem 0;
+}
+.fs-6{
+    font-size:.8rem;
+}
+
+.fs-7{
+    font-size:.8rem;
+}
+.bg-white{
+    background-color: #fff;
+}
+
+.parent{
+    width:95%;
+}
+
+.text-Parag{
+    color:#4E4E4E
+}
+
+.border-icon{
+    border:8px solid var(--siteColor);
+}
+
+.w-12{
+    width:12%;
+}
+
+
+
+
+
+
+    /* Nav section */
+
+    nav{
+        background-color: #fff;
+        z-index:33333;
+    }
+    
+    nav a {
+        color:#09c;
+    }
+
+    nav ul li a::after{
+    content:"";
+    width:0%;
+    height: 2px;
+    background-color: var(--siteColor);
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+
+
+nav ul li .hoverEffect::after{
+    transition: width 1s; 
+}
+
+nav ul li .hoverEffect:hover::after{
+    width: 10%;
+}
+
+.brdr::after{
+    width:10%;
+}
+
+    /* Nav section */
+    
+    /* Home Section */
+
+ #Home{
+    background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('../images/intro-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+ }
+
+ #Home h1::after{
+    content:"CEO";
+    position:absolute;
+    padding:2rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    top:110%;
+    left:50%;
+    transform: translate(-50%);  
+    animation-name: HeadingDisplay;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+ } 
+
+ @keyframes HeadingDisplay{
+    0%{content:"CEO"}
+    1%{content:"CEO |"}
+    2%{content:"CEO D|"}
+    3%{content:"CEO De|"}
+    4%{content:"CEO Dev|"}
+    5%{content:"CEO DevF|";}
+    6%{content:"CEO DevFo|";}
+    7%{content:"CEO DevFol|";}
+    8%{content:"CEO DevFoli|";}
+    9%{content:"CEO DevFolio|";}
+    10%{content:"CEO DevFoli|";}
+    11%{content:"CEO DevFol";}
+    12%{content:"CEO DevFo";}
+    13%{content:"CEO DevF";}
+     14%{content:"CEO Dev|";}
+     15%{content:"CEO De|";}
+    16%{content:"CEO D|";}
+    17%{content:"CEO |";}
+    18%{content:"CEO|";}
+    19%{content:"CE|";}
+    20%{content:"C|";}
+    21%{content:"|";}
+    22%{content:"W|";}
+    23%{content:"We|";}
+    24%{content:"Web|";}
+    25%{content:"Web D|";}
+    26%{content:"Web De|";}
+     27%{content:"Web Dev|";}
+     28%{content:"Web Deve|";}
+    29%{content:"Web Devel|";}
+    30%{content:"Web Develo|";}
+    31%{content:"Web Develop|";}
+    32%{content:"Web Develope|";}
+    33%{content:"Web Developer|";}
+    34%{content:"Web Develope|";}
+    35%{content:"Web Develo|";}
+    36%{content:"Web Devel|";}
+    37%{content:"Web Deve|";}
+    38%{content:"Web Dev";}
+    39%{content:"Web De|";}
+     40%{content:"Web Des|";}
+     41%{content:"Web Desi|";}
+    42%{content:"Web Desig|";}
+    43%{content:"Web Design|";}
+    44%{content:"Web Designe|";}
+    45%{content:"Web Designer|";}
+    46%{content:"Web Designe|";}
+    47%{content:"Web Design";}
+    48%{content:"Web Desig";}
+    49%{content:"Web Desi|";}
+    50%{content:"Web Des|";}
+    51%{content:"Web De|";}
+    52%{content:"Web D|";}
+     53%{content:"Web|";}
+     54%{content:"We|";}
+    55%{content:"W|";}
+    56%{content:"|";}
+    57%{content:"F|";}
+    58%{content:"Fr|";}
+    59%{content:"Fron|";}
+    60%{content:"Front|";}
+    61%{content:"Fronte|";}
+    62%{content:"Fronten|";}
+    63%{content:"Frontend|";}
+    64%{content:"Frontend D|";}
+    65%{content:"Frontend De";}
+     66%{content:"Frontend Dev|";}
+     67%{content:"Frontend Deve";}
+    68%{content:"Frontend Devel|";}
+    69%{content:"Frontend Develo";}
+    70%{content:"Frontend Develop|";}
+    71%{content:"Frontend Developer|";}
+    72%{content:"Frontend Develope|";}
+    73%{content:"Frontend Develop|";}
+     74%{content:"Frontend Develo|";}
+    75%{content:"Frontend Devel|";}
+    76%{content:"Frontend Deve|";}
+    77%{content:"Frontend Dev|";}
+    78%{content:"Frontend De|";}
+    79%{content:"Frontend D|";}
+    80%{content:"Frontend |";}
+    81%{content:"Frontend|";}
+    82%{content:"Fronten|";}
+    83%{content:"Fronte|";}
+    92%{content:"Front|";}
+    93%{content:"Fron|";}
+    95%{content:"Fro|";}
+    97%{content:"Fr|";}
+    99%{content:"F|";}
+    100%{content:"|";}    
+}
+
+    /* Home Section */
+    
+    /* ABout section */
+    
+    .skill progress {     
+          height:1.6rem ;
+      }
+
+      .about-info::after{
+        content:"";
+        width:20%;
+        height: 3px;
+        background-color: var(--siteColor);
+        position: absolute;
+        bottom:0;
+        left:0; 
+      }
+
+    /* ABout section */
+
+    /* Service Section */
+
+    .Service-Parag::after{
+        content:"";
+        width:5%;
+        height:4px;
+        background-color: var(--siteColor);
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .service-card:hover .border-icon{
+        border-color:#ccc;
+        background-color: var(--siteColor);
+        color:#fff;
+    }
+ 
+     /* Service Section */
+
+
+    /* Statistics section */
+     
+     #statistics{
+        background-image: linear-gradient(rgba(39,113,211,.8),rgba(39,113,211,.8)),url("../images/post-3.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+     }
+
+     #statistics .border-icon {
+        border-color:#CDE1F8;
+     }
+
+     #statistics i {
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+     }
+
+     #statistics  i{
+        margin-bottom:3rem;
+     }
+     #statistics i::after{
+        content:"30";
+        font-weight: normal;
+        font-size: 2rem;
+        position: absolute;
+        bottom:-3.5rem;
+        left:50%;
+        transform: translateX(-51%);
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+     }
+     
+     #statistics .first::after{
+        animation-name: workCount;
+     }
+
+     #statistics .second::after{
+        content:"2";
+        animation-name: yearsCount;
+     }
+     #statistics .third::after{
+        content:"140";
+        animation-name: clientCount;
+     }
+     #statistics .forth::after{
+        animation-name:awardCount;
+        content:"4";
+     }
+    
+     @keyframes workCount {
+        0%{content:"30";}
+        10%{content:"90";}
+        20%{content:"120";}
+        30%{content:"195";}
+        40%{content:"205";}
+        50%{content:"270";}
+        60%{content:"295";}
+        70%{content:"300";}
+        80%{content:"350";}
+        90%{content:"400";}
+        100%{content:"450";}
+     }
+
+     @keyframes yearsCount {
+        0%{content:"2";}
+        10%{content:"3";}
+        20%{content:"4";}
+        30%{content:"6";}
+        40%{content:"8";}
+        50%{content:"10";}
+        60%{content:"11";}
+        70%{content:"12";}
+        80%{content:"13";}
+        90%{content:"14";}
+        100%{content:"15";}
+     }
+
+     @keyframes clientCount {
+        0%{content:"140";}
+        10%{content:"180";}
+        20%{content:"240";}
+        30%{content:"280";}
+        40%{content:"310";}
+        50%{content:"355";}
+        60%{content:"390";}
+        70%{content:"410";}
+        80%{content:"480";}
+        90%{content:"520";}
+        100%{content:"550";}
+     }
+
+     @keyframes awardCount {
+        0%{content:"4";}
+        10%{content:"8";}
+        20%{content:"12";}
+        30%{content:"16";}
+        40%{content:"22";}
+        50%{content:"26";}
+        60%{content:"30";}
+        70%{content:"31";}
+        80%{content:"33";}
+        90%{content:"35";}
+        100%{content:"36";}
+     }
+    /* Statistics section */
+    
+    /* Portfolio Section */
+    #Work .card img{
+        transition: all 1s;
+    }
+    #Work .card:hover img {
+        transform: scale(1.3);
+    }
+
+    .card,.card-img-top{
+        border-radius: 0px;
+    }
+
+    /* Portfolio Section */
+
+    /* testmonial Section */
+
+    .testmonial,#Contact{
+        background-image: linear-gradient(rgba(39,113,211,.8),rgba(39,113,211,.8)),url("../images/overlay-bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    .testmonial .carousel-indicators{
+           bottom:-15%;
+    }
+    .testmonial .carousel-indicators [data-bs-target]{
+        width:20px;
+        height:6px;
+    }
+    /* testmonial Section */
+    /* Blog Section */
+      
+    .top-8{
+        top:-8%;
+    }
+    #Blog .card h5 {
+        transition:all 1s;
+    }
+    #Blog .card h5:hover{
+        color:var(--siteColor)
+    }
+    
+    /* Blog Section  */
+
+    /* Contact Section */
+   
+      #Contact .socials a:hover i{
+        background-color: var(--siteColor);
+        color:#fff;
+        border-color: #ccc;
+      }
+    /* Contact Section */
+
+
+
+@media screen and (min-width:992px){
+    .parent{
+        width:95%;
+    }
+    /* Nav section */
+    .px-lg-7{
+        padding:0 0.625rem;
+    }
+ 
+      nav ul li a::after{
+        left:0.5rem;  
+      }
+
+    nav{
+        background-color: transparent;
+    }
+    
+    nav .container a ,#actHome{
+        color:#fff !important;
+    }
+     
+    nav ul li a::after{
+        background-color: #fff;
+    }
+
+    .brdr::after{
+        width: 60%;
+    }
+    nav ul li .hoverEffect:hover::after{
+        width:60%;
+    }
+
+        /* Nav section */
+
+        .h7{
+            font-size: 4rem;
+            margin-bottom:3.5rem;
+        }
+
+        #Home h1::after{
+            font-size: 2rem;
+        }
+
+
+   
+}
+
+@media screen and (min-width:1200px){
+    .parent {
+        width:75%;
+    }
+
+    .testmonial-caption{
+          width:75%;
+    }
+}
